@@ -22,12 +22,12 @@ Either as you go or after you are done writing your program, answer the followin
 
 **What did Copilot do well as the driver?**
 
-Write your response here!
+Copilot did fairly well, it very quickly generated solution snippets and they worked for the most part
 
 **What did Copilot struggle with as the driver?**
 
-Write your response here!
+Copilot failed to explain or even vocalize the code context changes it wanted (possibly missed them). One instance of this was it writing snippets centered around a variable that it didnt specify/define 
 
 **What challenges did you face while working with Copilot as the driver?**
 
-Write your response here!
+At times it hallucinated the need for changes, for instance it tried to get me to modify the vbox when I instructed it to generate steps of what to do, so critical thinking and oversight is necessary and you cant just let it do what it wants.
