@@ -26,7 +26,7 @@ Copilot did fairly well, it very quickly generated solution snippets and they wo
 
 **What did Copilot struggle with as the driver?**
 
-Copilot failed to explain or even vocalize the code context changes it wanted (possibly missed them). One instance of this was it writing snippets centered around a variable that it didnt specify/define 
+Copilot failed to explain or even vocalize the code context changes it wanted (it possibly missed them). One instance of this was it writing snippets centered around a variable that it didnt specify/define 
 
 **What challenges did you face while working with Copilot as the driver?**
 
