@@ -32,6 +32,9 @@ public class HonestHeadlines {
     /** The text box for the user to enter their response */
     private TextField inputField;
 
+    /** The current headline entered by the user */
+    private String headline;
+
     /**
      * Creates a new instance of HonestHeadlines with the given parameters.
      * 
@@ -112,8 +115,12 @@ public class HonestHeadlines {
      * @return "Fake!" if the headline contains any sensational words, "Real!" otherwise.
      */
     public String classifyHeadline(String input) {
-        
-        return "";
+        for (String word : sensationalWords) {
+            if (headline.toLowerCase().contains(word.toLowerCase())) {
+                return "Sensational";
+            }
+        }
+        return "Not Sensational";
     }
 
     /**
@@ -130,6 +137,9 @@ public class HonestHeadlines {
         temp.add("miracle");
         temp.add("secret");
         temp.add("conspiracy");
+        temp.add("hoax");
+        temp.add("scam");
+        temp.add("controversial");
 
         return temp;
     }
@@ -161,6 +171,7 @@ public class HonestHeadlines {
      * @param userInput the input provided by the user
      */
     public void updateUserResponse(String userInput) {
+        headline = userInput;
         results.appendText("Headline: " + userInput + "\n");
     }
 
